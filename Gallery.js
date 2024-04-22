@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const images = [
-        'image1.jpg',
-        'image2.jpg',
-        'image3.jpg'
+        'g1.jpg',
+        'g2.jpg',
+        'g3.jpg',
+        'g4.jpg'
     ];
     let currentImageIdx = 0;
     const galleryImage = document.querySelector('.gallery img');
