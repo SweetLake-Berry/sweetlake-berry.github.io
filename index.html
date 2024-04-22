@@ -5,15 +5,19 @@
 <style>
 
 
-  .gallery img {
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 0 auto;
+.scroll-gallery {
+            display: flex;
+            overflow-x: auto;
+            scrollbar-width: none; /* для Firefox */
+            -ms-overflow-style: none;  /* для Internet Explorer и Edge */
         }
-        .buttons {
-            text-align: center;
-            margin-top: 20px;
+        .scroll-gallery::-webkit-scrollbar {
+            display: none; /* для Chrome, Safari и Opera */
+        }
+        .scroll-gallery img {
+            max-width: 100%;
+            height: auto;
+            flex: 0 0 auto;
         }
 
   
@@ -124,12 +128,13 @@ SWEET LAKE
 
 
 
-<div class="gallery">
+<div class="scroll-gallery">
         <img src="g1.jpg" alt="Фото 1">
-    </div>
-    <div class="buttons">
-        <button id="prev">Назад</button>
-        <button id="next">Вперед</button>
+        <img src="g2.jpg" alt="Фото 2">
+        <img src="g3.jpg" alt="Фото 3">
+        <img src="g4.jpg" alt="Фото 3">
+
+  
     </div>
 
     <script src="Gallery.js"></script>
